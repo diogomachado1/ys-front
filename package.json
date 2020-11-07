@@ -8,8 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/core": "^1.0.0-rc.8",
+    "axios": "^0.21.0",
+    "flv.js": "^1.5.0",
+    "framer-motion": "^2.9.4",
+    "js-cookie": "^2.2.1",
     "next": "10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-hook-form": "^6.10.1",
+    "react-player": "^2.6.2",
+    "skeleton": "^0.1.2",
+    "swr": "^0.3.8",
+    "yup": "^0.29.3"
   }
 }
