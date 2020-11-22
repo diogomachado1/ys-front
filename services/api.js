@@ -3,7 +3,7 @@ import Axios from "axios";
 let urls = {
   test: `http://localhost:3333/`,
   development: "http://localhost:3333/v1/",
-  production: "https://your-production-url.com/",
+  production: "http://localhost:3333/v1/",
 };
 const api = Axios.create({
   baseURL: urls[process.env.NODE_ENV],

@@ -3,6 +3,8 @@ import { ChakraProvider, ThemeProvider } from "@chakra-ui/core";
 import { AuthProvider } from "../contexts/auth";
 import { theme } from "@chakra-ui/core";
 
+import "./style.css";
+
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>

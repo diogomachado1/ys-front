@@ -17,6 +17,7 @@ export const AuthProvider = ({ children }) => {
       const token = localStorage.getItem("token");
       const user = JSON.parse(localStorage.getItem("user"));
       if (token) {
+        console.log("add token");
         api.defaults.headers.Authorization = `Bearer ${token}`;
         if (user) setUser(user);
       }
@@ -45,7 +46,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem("token");
     setUser(null);
     delete api.defaults.headers.Authorization;
-    window.location.pathname = "/login";
+    router.push("/streams");
   };
 
   return (

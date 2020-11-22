@@ -1,16 +1,5 @@
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Center,
-  Container,
-  Flex,
-  Link,
-  Stack,
-  Text,
-  useTheme,
-} from "@chakra-ui/core";
-import React, { useCallback, useEffect } from "react";
+import { Box, Button, Center, Flex, Link, Stack, Text } from "@chakra-ui/core";
+import React from "react";
 import Input from "../components/Input/input";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
