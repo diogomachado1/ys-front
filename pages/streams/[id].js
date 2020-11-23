@@ -72,7 +72,7 @@ export default function Home({ stream, isNotFound }) {
                   style={{ maxHeight: "70vh" }}
                   controls={true}
                   playing={true}
-                  url={`${process.env.RTMP_URL}/live/${stream.username}_${resolution}.flv`}
+                  url={`${process.env.NEXT_PUBLIC_RTMP_URL}/live/${stream.username}_${resolution}.flv`}
                 />
               </Flex>
             ) : (
