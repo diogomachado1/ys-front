@@ -38,7 +38,7 @@ export default function Home({ stream, isNotFound }) {
           <Flex maxW="100%" flexDir="column">
             {stream.inLive ? (
               <Flex position="relative">
-                <Menu m="2" ml="auto">
+                {/* <Menu m="2" ml="auto">
                   <MenuButton
                     position="absolute"
                     zIndex="30"
@@ -65,14 +65,14 @@ export default function Home({ stream, isNotFound }) {
                       360p
                     </MenuItem>
                   </MenuList>
-                </Menu>
+                </Menu> */}
                 <ReactPlayer
                   width="auto"
                   height="auto"
                   style={{ maxHeight: "70vh" }}
                   controls={true}
                   playing={true}
-                  url={`${process.env.NEXT_PUBLIC_RTMP_URL}/live/${stream.username}_${resolution}.flv`}
+                  url={`${process.env.NEXT_PUBLIC_RTMP_URL}live/${stream.username}.flv`}
                 />
               </Flex>
             ) : (
